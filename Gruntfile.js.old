@@ -16,26 +16,26 @@ module.exports = function(grunt) {
 			files: [ 'dist' ]
 		},
 		concat: {
-      javascript:{
-        options: {
-          banner: '<%= banner %>',
-          stripBanners: true
-        },
-        dist: {
-          src: [ 'src/jquery.<%= pkg.name %>.js' ],
-          dest: 'dist/jquery.<%= pkg.name %>.js'
-        }
-      },
-      css:{
-        options: {
-          banner: '<%= banner %>',
-          stripBanners: true
-        },
-        dist: {
-          src: [ 'css/desk-stylesheet.css', 'css/desk-stylesheet-custom.css' ],
-          dest: 'dist/css/concatenado.css'
-        }
-      }
+		      javascript:{
+			options: {
+			  banner: '<%= banner %>',
+			  stripBanners: true
+			},
+			dist: {
+			  src: [ 'src/jquery.<%= pkg.name %>.js' ],
+			  dest: 'dist/jquery.<%= pkg.name %>.js'
+			}
+		      },
+		      css:{
+			options: {
+			  banner: '<%= banner %>',
+			  stripBanners: true
+			},
+			dist: {
+			  src: [ 'css/desk-stylesheet.css', 'css/desk-stylesheet-custom.css' ],
+			  dest: 'dist/css/concatenado.css'
+			}
+		      }
 
 			
 		},

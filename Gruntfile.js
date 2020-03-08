@@ -21,6 +21,13 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['cssmin']);
 
   grunt.registerTask('minifica', ['cssmin']);
+  grunt.registerTask('limpiacss', ['csscomb']);
+  grunt.registerTask('verificacss', ['stylelint']);
+  grunt.registerTask('testcss', ['csslint']);
   grunt.registerTask('concatena', ['concat']);
+  grunt.registerTask('limpia', ['clear']);
+  grunt.registerTask('verificajs', ['jshint']);
+  grunt.registerTask('ofusca', ['uglify']);
+  grunt.registerTask('devel', ['watch']);
 
 };

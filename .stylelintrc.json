@@ -1,0 +1,12 @@
+{
+    "rules":{
+        "string-quotes": "single",
+        "no-duplicate-selectors": true,
+        "color-hex-case": "lower",
+        "color-hex-length": "short",
+        "color-named": "never",
+        "selector-attribute-quotes": "always",
+        "declaration-colon-space-after": "always",
+        "selector-pseudo-element-colon-notation": "double"
+    }
+}
