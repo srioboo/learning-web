@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        editor ckeditor
+
+    </title>
+    <!-- <script type="module" src="js/script.js"></script> -->
+    <script src="node_modules/ckeditor4/ckeditor.js"></script>
+    <script src="node_modules/ckeditor4/plugins/font/plugin.js"></script>
+</head>
+
+<body>
+    <form>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
+            This is my textarea to be replaced with CKEditor.
+        </textarea>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace( 'editor1' );
+
+            CKEDITOR.config.removePlugins = 'elementspath';
+            CKEDITOR.config.extraPlugins = 'font';
+            CKEDITOR.config.fontSize_sizes = 'small;smaller;x-small;xx-small;normal/initial;large;x-large';
+            CKEDITOR.config.toolbar= [
+						[ 'Source' ],
+                        [ 'Styles', 'Format', 'Font', 'FontSize' ],
+						[ 'Bold', 'Italic' ],
+						[ 'Undo', 'Redo' ],
+						[ 'About' ]
+					];
+        </script>
+    </form>
+
+</body>
+
+</html>
