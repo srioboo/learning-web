@@ -10,6 +10,12 @@ Trans clonar lanzar:
 npm install
 ```
 
+## Lanzar el servidor
+
+Para lanzar el servidor se ejecuta
+```
+node server.js
+```
 
 
 
