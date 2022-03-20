@@ -20,9 +20,15 @@ const typeDefs = gql(fs.readFileSync('./schema.graphql', {encoding: 'utf8'}));
 const resolvers = require('./resolvers');
 // creamo el servidor apollo y se lo asignamos al servidor express como midleware
 const apolloServer = new ApolloServer({typeDefs, resolvers});
-await apolloServer.start();
 
-apolloServer.applyMiddleware({app, path:'/graphql'});
+async function startServer(){
+  await apolloServer.start();
+
+  apolloServer.applyMiddleware({app, path:'/graphql'});
+}
+
+startServer();
+
 
 app.post('/login', (req, res) => {
   const {email, password} = req.body;
