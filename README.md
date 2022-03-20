@@ -31,4 +31,5 @@ node server.js
     }
     ´´´
 
-
+- Con GraphQL siempre se usan POST request
+- usa json tanto en el envio como recepción de datos
