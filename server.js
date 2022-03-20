@@ -1,6 +1,10 @@
 const { ApolloServer, gql } = require('apollo-server');
 
 const typeDefs = gql`
+    schema {
+        query: Query
+    }
+
     type Query {
         greetings: String
     }
