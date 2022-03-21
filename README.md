@@ -33,3 +33,7 @@ node server.js
 
 - Con GraphQL siempre se usan POST request
 - usa json tanto en el envio como recepción de datos
+
+- los tipos:
+    - hay un tipo especiál ID
+    - si no queremos que un atributo esté vacío ponermos una exclamación ej.- ID!

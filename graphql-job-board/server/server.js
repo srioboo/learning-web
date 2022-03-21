@@ -21,12 +21,11 @@ const resolvers = require('./resolvers');
 // creamo el servidor apollo y se lo asignamos al servidor express como midleware
 const apolloServer = new ApolloServer({typeDefs, resolvers});
 
+// requiera de await y llamada al metodo start
 async function startServer(){
   await apolloServer.start();
-
   apolloServer.applyMiddleware({app, path:'/graphql'});
 }
-
 startServer();
 
 
