@@ -1,0 +1,45 @@
+.flex-content {
+    border: 1px solid #555;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    /*width: 100%;*/
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.flex-content .item {
+
+    /*margin: 5px;
+    border: 1px solid red;
+    width: 25vw;
+    height: 150px;
+    flex-wrap: wrap;*/
+
+    margin: 0;
+    display: inherit;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    align-content: center;
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.red {
+    background-color: red;
+}
